@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Card Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        
+        .card-container {
+            max-width: 350px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: lightgray;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+
+        .card:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-5px);
+        }
+
+        
+        .card-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+    
+        .placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+    
+        .card-caption {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Card Gallery</h1>
+    
+    <div class="card-container">
+    
+        <div class="card">
+            <div class="card-image">
+                <div class="placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2);">Image 1</div>
+            </div>
+            <div class="card-caption">Beautiful Landscape</div>
+        </div>
+
+    
+        <div class="card">
+            <div class="card-image">
+                <div class="placeholder" style="background: linear-gradient(135deg, #f093fb, #f5576c);">Image 2</div>
+            </div>
+            <div class="card-caption">Mountain View</div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-image">
+                <div class="placeholder" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">Image 3</div>
+            </div>
+            <div class="card-caption">Ocean Sunset</div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-image">
+                <div class="placeholder" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">Image 4</div>
+            </div>
+            <div class="card-caption">Forest Path</div>
+        </div>
+    </div>
+</body>
+</html>

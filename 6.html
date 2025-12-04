@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 36px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .table-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            
+           
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px solid#444;
+        }
+
+        th, td {
+            border: 2px solid #444;
+            padding: 15px;
+            text-align: center;
+            font-size: 15px;
+            background-color: #fff;
+        }
+
+        th {
+            font-weight: bold;
+            color: #333;
+        }
+
+        td {
+            color: #444;
+        }
+
+        .day-column {
+            font-weight: bold;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .left-align {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>TIME TABLE</h1>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Day/Period</th>
+                    <th>I<br>9:30-<br>10:20</th>
+                    <th>II<br>10:20-<br>11:10</th>
+                    <th>III<br>12:00-<br>12:40</th>
+                    <th>12:00-<br>12:40</th>
+                    <th>IV<br>12:40-<br>1:30</th>
+                    <th>V<br>1:30-<br>2:20</th>
+                    <th>VI<br>2:20-<br>3:10</th>
+                    <th>VII<br>3:10-<br>4:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day-column">Monday</td>
+                    <td>Eng</td>
+                    <td>Mat</td>
+                    <td>Che</td>
+                    <td class="left-align" rowspan="5">LUNCH</td>
+                    <td class="left-align" colspan="3">LAB</td>
+                    <td>Phy</td>
+                </tr>
+                <tr>
+                    <td class="day-column">Tuesday</td>
+                    <td class="left-align" colspan="3">LAB</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td>Mat</td>
+                    <td>SPORTS</td>
+                </tr>
+                <tr>
+                    <td class="day-column">Wednesday</td>
+                    <td>Mat</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td class="left-align" colspan="2">LIBRARY</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="day-column">Thursday</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td class="left-align" colspan="3">LAB</td>
+                    <td>Mat</td>
+                </tr>
+                <tr>
+                    <td class="day-column">Friday</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td class="left-align" colspan="3">LAB</td>
+                    <td>Mat</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

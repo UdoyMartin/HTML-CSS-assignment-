@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .image-container {
+            background-color: lightblue;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        
+        .image-box {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+      
+        .image-box:hover {
+            transform: scale(1.1);
+        }
+
+       
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+
+        .placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Grid Gallery</h1>
+    
+    <div class="image-container">
+        <div class="image-box">
+            <div class="placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2);">Image 1</div>
+        </div>
+
+        
+        <div class="image-box">
+            <div class="placeholder" style="background: linear-gradient(135deg, #f093fb, #f5576c);">Image 2</div>
+        </div>
+
+        
+        <div class="image-box">
+            <div class="placeholder" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">Image 3</div>
+        </div>
+
+      
+        <div class="image-box">
+            <div class="placeholder" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">Image 4</div>
+        </div>
+
+       
+        <div class="image-box">
+            <div class="placeholder" style="background: linear-gradient(135deg, #fa709a, #fee140);">Image 5</div>
+        </div>
+
+        
+        <div class="image-box">
+            <div class="placeholder" style="background: linear-gradient(135deg, #30cfd0, #330867);">Image 6</div>
+        </div>
+    </div>
+</body>
+</html>
